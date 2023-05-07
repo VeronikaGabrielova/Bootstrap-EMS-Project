@@ -1,0 +1,8 @@
+node_modules
+# Ignore Bootstrap source files
+/node_modules/bootstrap/
+
+# Ignore compiled Bootstrap files
+/css/bootstrap.css
+/js/bootstrap.js
+

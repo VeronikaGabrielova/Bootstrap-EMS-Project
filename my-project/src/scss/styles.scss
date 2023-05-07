@@ -1,0 +1,35 @@
+// Import all of Bootstrap's CSS
+
+$primary: #3eb6e1;
+$success: #A0D468;
+$warning: #FFCE54;
+$danger: #ED5565;
+$info: #48CFAD;
+
+
+
+@import "./../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//Custom styles
+
+.brand-gradient {
+    background: #FF8811;
+    background: linear-gradient(to right, #2a8d83 0%, #12cfa3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.vr {
+    color: rgb(61, 58, 58);
+}
+
+.custom-button {
+    height:31px;
+    display:flex;
+    align-items: center;
+}
+.backdrop-filter {
+    backdrop-filter:blur(5px);
+}
+
+
