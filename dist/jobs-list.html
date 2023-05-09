@@ -11,7 +11,9 @@
   </head>
   <body class="bg-light">
     <!--Nav-->
-    <nav class="navbar navbar-light navbar-expand-lg bg-light shadow small mb-3">
+    <nav
+      class="navbar navbar-light navbar-expand-lg bg-light shadow small mb-3"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="dash.html"
           ><span class="brand-gradient">EMS 2.0</span></a
@@ -42,10 +44,7 @@
         <div class="collapse navbar-collapse" id="navbar-supported-content">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a
-                class="nav-link"
-                aria-current-page="page"
-                href="dash.html"
+              <a class="nav-link" aria-current-page="page" href="dash.html"
                 >Home</a
               >
             </li>
@@ -126,7 +125,7 @@
           <div class="list-group shadow-sm mb-3">
             <div class="list-group-item active">Related Links</div>
 
-            <a href="#" class="list-group-item list-group-item-action"
+            <a href="employees-list.html" class="list-group-item list-group-item-action"
               >Employees List</a
             >
           </div>
@@ -345,7 +344,7 @@
                       />
                     </div>
                   </div>
-        
+
                   <div class="col-md-6 gy-2">
                     <div class="d-grid">
                       <button class="btn btn-sm btn-success" type="submit">
@@ -411,7 +410,6 @@
                 <th>Job Name</th>
                 <td>Graphic Designer</td>
               </tr>
-              
             </table>
           </div>
           <div class="modal-footer">
@@ -455,52 +453,52 @@
           </div>
           <div class="modal-body">
             <form>
-                <div class="container">
-                  <div class="row gx-3">
-                    <div class="col-md-12">
-                      <div class="mb-3">
-                        <input
-                          class="form-control form-control-sm"
-                          type="date"
-                          value="2022-07-25"
-                          required
-                        />
-                      </div>
+              <div class="container">
+                <div class="row gx-3">
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <input
+                        class="form-control form-control-sm"
+                        type="date"
+                        value="2022-07-25"
+                        required
+                      />
                     </div>
-                    <div class="col-md-12">
-                      <div class="mb-3">
-                        <input
-                          class="form-control form-control-sm"
-                          type="text"
-                          placeholder="Job Name"
-                          value="Graphic Designer"
-                          required
-                        />
-                      </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <input
+                        class="form-control form-control-sm"
+                        type="text"
+                        placeholder="Job Name"
+                        value="Graphic Designer"
+                        required
+                      />
                     </div>
-          
-                    <div class="col-md-6 gy-2">
-                      <div class="d-grid">
-                        <button class="btn btn-sm btn-warning" type="submit">
-                          Update Job
-                        </button>
-                      </div>
+                  </div>
+
+                  <div class="col-md-6 gy-2">
+                    <div class="d-grid">
+                      <button class="btn btn-sm btn-warning" type="submit">
+                        Update Job
+                      </button>
                     </div>
-                    <div class="col-md-6 gy-2">
-                      <div class="d-grid">
-                        <button
-                          class="btn btn-sm btn-danger"
-                          type="button"
-                          data-bs-dismiss="modal"
-                          aria-label="close"
-                        >
-                          Close
-                        </button>
-                      </div>
+                  </div>
+                  <div class="col-md-6 gy-2">
+                    <div class="d-grid">
+                      <button
+                        class="btn btn-sm btn-danger"
+                        type="button"
+                        data-bs-dismiss="modal"
+                        aria-label="close"
+                      >
+                        Close
+                      </button>
                     </div>
                   </div>
                 </div>
-              </form>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -521,7 +519,8 @@
             class="modal-body text-center d-flex justify-content-between align-items-center"
           >
             <h4 class="fw-light m-0">
-              Do you really want to delete <strong> <q>Graphic Designer</q></strong
+              Do you really want to delete
+              <strong> <q>Graphic Designer</q></strong
               >?
             </h4>
             <button
@@ -536,7 +535,7 @@
               type="submit"
               class="btn btn-sm btn-danger"
               data-bs-toggle="modal"
-              data-bs-target="#employee_edit"
+              data-bs-target="#employee_deleted"
             >
               YES!
             </button>
@@ -553,5 +552,44 @@
       </div>
     </div>
     <!--Job Delete Modal-->
+    <!--Job Deleted Modal-->
+    <div
+      class="modal fade backdrop-filter"
+      id="employee_deleted"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div
+            class="modal-body text-center d-flex justify-content-between align-items-center"
+          >
+            <h4 class="fw-light m-0 text-danger">
+              Job positon
+              <strong> <q class="text-dark">Graphic Designer</q></strong> has
+              been <strong>deleted</strong>.
+            </h4>
+            <button
+              type="button"
+              class="btn-close ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-sm btn-primary"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            >
+              Go back
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Job Deleted Modal-->
   </body>
 </html>
